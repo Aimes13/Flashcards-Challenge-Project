@@ -19,7 +19,7 @@ export default function NewTopicForm() {
     }
 
     // dispatch your add topic action here
-    dispatch(addTopic({ name: name, id: uuidv4(), icon }));
+    dispatch(addTopic({ id: uuidv4(), name: name, icon: icon, quizIds: [] }));
     history.push(ROUTES.topicsRoute());
   };
 
